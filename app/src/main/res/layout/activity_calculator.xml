@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".CalculatorActivity">
+
+
+    <TextView
+        android:id="@+id/result"
+        android:text="@string/result"
+        android:textSize="45sp"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_marginTop="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/num1"
+
+
+        android:textSize="30sp"
+        android:layout_width="150sp"
+        android:layout_height="55sp"
+        app:layout_constraintTop_toTopOf="@+id/result"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        android:layout_marginTop="100sp"
+android:layout_marginLeft="5sp"
+
+        android:layout_marginStart="5sp" />
+
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="150sp"
+        android:layout_height="55sp"
+
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="@+id/result"
+
+        app:layout_constraintStart_toEndOf="@+id/num1"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginStart="50sp" />
+
+    <Button
+
+        android:id="@+id/sum"
+        android:text="@string/sum"
+        android:textSize="20sp"
+        android:layout_width="70sp"
+        android:layout_height="55sp"
+        app:layout_constraintTop_toTopOf="@+id/num1"
+       app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="100sp"
+        android:layout_marginStart="35sp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="35sp"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="70sp"
+        android:layout_height="55sp"
+        android:text="@string/minus"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/num1"
+        app:layout_constraintStart_toEndOf="@+id/sum"
+        android:layout_marginTop="100sp"
+        android:layout_marginStart="5sp"
+        android:layout_marginLeft="5sp"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:id="@+id/proizvedenie"
+        android:layout_width="70sp"
+        android:layout_height="55sp"
+        android:text="@string/umnojit"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/num1"
+        app:layout_constraintStart_toEndOf="@+id/minus"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="5sp"
+        android:onClick="onButtonClick"
+
+        android:layout_marginStart="5sp" />
+
+    <Button
+        android:id="@+id/delenie"
+        android:layout_width="60sp"
+        android:layout_height="55sp"
+        android:text="@string/razdelit"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/num1"
+        app:layout_constraintStart_toEndOf="@+id/proizvedenie"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="5sp"
+android:onClick="onButtonClick"
+        android:layout_marginStart="5sp" />
+
+
+
+    <Button
+        android:id="@+id/return_main"
+        android:layout_width="200sp"
+        android:layout_height="55sp"
+        android:text="@string/back"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:layout_marginTop="300sp"
+
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

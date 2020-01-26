@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyCalculatorVersion</string>
+    <string name="openapp">openApp</string>
+    <string name="open_app">Open App</string>
+    <string name="num2">num2</string>
+    <string name="num1">num1</string>
+    <string name="result">result</string>
+    <string name="sum">+</string>
+    <string name="minus">-</string>
+    <string name="umnojit">*</string>
+    <string name="razdelit">/</string>
+    <string name="resultat">=</string>
+    <string name="returne">return</string>
+    <string name="back">на главную</string>
+</resources>
